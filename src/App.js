@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./Dashboard/Dashboard";
 import Admin from "./modules/Admin/Admin";
 const App = () => {
   return (
-    <Router>
-      <Admin />
-    </Router>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/adminlogin" element={<Admin />} />
+    </Routes>
   );
 };
 
