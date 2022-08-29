@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "book_name": "Micki + Maude",
+    "authors_name": "Isa Sholem",
+    "rating": "2"
+  },
+  {
+    "id": 2,
+    "book_name": "Sunday Bloody Sunday",
+    "authors_name": "Reade Dirand",
+    "rating": "1"
+  },
+  {
+    "id": 3,
+    "book_name": "Sam Peckinpah: Man of Iron",
+    "authors_name": "Andris Redshaw",
+    "rating": "1"
+  },
+  {
+    "id": 4,
+    "book_name": "L: Change the World",
+    "authors_name": "Gauthier Feldmann",
+    "rating": "4"
+  },
+  {
+    "id": 5,
+    "book_name": "Jack the Giant Killer",
+    "authors_name": "Sheila-kathryn Gerok",
+    "rating": "2"
+  },
+  {
+    "id": 6,
+    "book_name": "Rocket Gibraltar",
+    "authors_name": "Howey Reisen",
+    "rating": "5"
+  },
+  {
+    "id": 7,
+    "book_name": "Everybody's Woman (La signora di tutti)",
+    "authors_name": "Jarid Melross",
+    "rating": "5"
+  },
+  {
+    "id": 8,
+    "book_name": "Santa Claus Has Blue Eyes (Le père Noël a les yeux bleus)",
+    "authors_name": "Myrilla Hansemann",
+    "rating": "3"
+  },
+  {
+    "id": 9,
+    "book_name": "Inspector Palmu's Error (Komisario Palmun erehdys)",
+    "authors_name": "Ronny Havvock",
+    "rating": "2"
+  },
+  {
+    "id": 10,
+    "book_name": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
+    "authors_name": "Orsa Bumby",
+    "rating": "4"
+  }
+]

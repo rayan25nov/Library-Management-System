@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
-* {
+*,
+*:before,
+*:after  {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Raleway, sans-serif;
 }
 
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(90deg, #c7c5f4, #776bcc);
 }
-.container::before{
+/* .container::before{
   content: "";
   position: absolute;
   top: 0;
@@ -22,7 +26,7 @@
   display: block;
   right: 0;
   background: linear-gradient(90deg, #c7c5f4, #776bcc);
-}
+} */
 
 .screen {
   background: linear-gradient(90deg, #5d54a4, #7c78b8);

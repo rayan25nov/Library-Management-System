@@ -8,7 +8,7 @@ const Admin = () => {
     <div className="container">
       <div className="screen">
         <div className="screen__content">
-          <h1 className="heading">Author's Page</h1>
+          <h1 className="heading">New Book Entry</h1>
           <AdminForm />
         </div>
         <div className="screen__background">
