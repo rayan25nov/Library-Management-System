@@ -1,22 +1,22 @@
-import "./Admin.css";
+import "./AddBook.css";
 
-import AdminBackground from "./AdminDetails/AdminBackground";
-import AdminForm from "./AdminDetails/AdminForm";
+import Background from "./Background";
+import Form from "./Form";
 
-const Admin = () => {
+const AddBook = () => {
   return (
     <div className="container">
       <div className="screen">
         <div className="screen__content">
           <h1 className="heading">New Book Entry</h1>
-          <AdminForm />
+          <Form />
         </div>
         <div className="screen__background">
-          <AdminBackground />
+          <Background />
         </div>
       </div>
     </div>
   );
 };
 
-export default Admin;
+export default AddBook;

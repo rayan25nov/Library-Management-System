@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../Admin.css";
+import "./AddBook.css";
 
-const AdminForm = () => {
+const Form = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [subject, setSubject] = useState("");
@@ -90,4 +90,4 @@ const AdminForm = () => {
   );
 };
 
-export default AdminForm;
+export default Form;

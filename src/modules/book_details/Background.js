@@ -1,5 +1,5 @@
-import "../Admin.css";
-const AdminBackground = () => {
+import "./AddBook.css";
+const Background = () => {
   return (
     <div>
       <span className="screen__background__shape screen__background__shape4" />
@@ -10,4 +10,4 @@ const AdminBackground = () => {
   );
 };
 
-export default AdminBackground;
+export default Background;

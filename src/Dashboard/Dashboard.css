@@ -17,11 +17,6 @@
   --c-text-tertiary: var(--c-gray-500);
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 .body {
   line-height: 1.5;
   min-height: 100vh;
@@ -32,6 +27,11 @@
   padding-top: 3vw;
   padding-bottom: 3vw;
   justify-content: center;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 img {
@@ -60,7 +60,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 15%;
   right: 0;
   background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=990&q=80);
   background-size: cover;
@@ -273,22 +273,24 @@ textarea {
   border-collapse: collapse;
   margin: 25px auto;
   font-size: 1.2rem;
-  min-width: 400px;
   width: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  background-color: #AFB4FF;
 }
+
 @media (max-width: 700px) {
   .content-table {
     font-size: 0.9rem;
   }
 }
+
 .content-table thead tr {
   background-color: #a66cff;
-  color: var(--c-gray-100);
+  color: #ffffff;
   text-align: left;
   font-weight: bold;
 }
@@ -298,22 +300,18 @@ textarea {
   padding: 12px 15px;
 }
 
-.content-body tr {
+.content-body tr:hover {
   border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #AFB4FF;
 }
 
-.content-body tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
 
 .content-body tr:last-of-type {
-  border-bottom: 2px solid #afb4ff;
+  border-bottom: 2px solid #9C9EFE;
 }
 
-.content-body tr.active-row {
-  font-weight: bold;
-  color: #009879;
-}
 
 .footer {
   display: grid;

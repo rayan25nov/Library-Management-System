@@ -22,7 +22,7 @@ const Dashboard = () => {
                   </h3>
                 </div>
               </Link>
-              <Link to="/adminlogin" className="tile">
+              <Link to="/userlogin" className="tile">
                 <div className="tile-header">
                   <h3>
                     <DoubleArrowSharpIcon />
@@ -30,7 +30,7 @@ const Dashboard = () => {
                   </h3>
                 </div>
               </Link>
-              <Link to="/adminlogin" className="tile">
+              <Link to="/stafflogin" className="tile">
                 <div className="tile-header">
                   <h3>
                     <DoubleArrowSharpIcon />
@@ -56,7 +56,7 @@ const Dashboard = () => {
                 </thead>
                 {Data.map((data, index) => {
                   return (
-                    <tbody className="content-body">
+                    <tbody className="content-body" key={data.id}>
                       <tr>
                         <td>{data.id}</td>
                         <td>{data.book_name}</td>
