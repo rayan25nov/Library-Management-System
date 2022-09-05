@@ -1,22 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
-const Navbar = () => {
+import styles from "./Navbar.module.css";
+const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="Navbar">
-      <span className="nav-logo">User</span>
-      <div className={`nav-items ${isOpen && "open"}`}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/service">Service</Link>
-        <Link to="/contact">Contact</Link>
+    <div className={`${styles.Navbar}`}>
+      <span className={styles.nav_logo}>{props.title}</span>
+      <div className={`${styles.nav_items} ${isOpen && styles.open}`}>
+        <Link className={styles.link} to="/">
+          Home
+        </Link>
+        <Link className={styles.link} to="/about">
+          About
+        </Link>
+        <Link className={styles.link} to="/service">
+          Service
+        </Link>
+        <Link className={styles.link} to="/contact">
+          Contact
+        </Link>
       </div>
       <div
-        className={`nav-toggle ${isOpen && "open"}`}
+        className={`${styles.nav_toggle} ${isOpen && styles.open}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="bar"></div>
+        <div className={styles.bar}></div>
       </div>
     </div>
   );

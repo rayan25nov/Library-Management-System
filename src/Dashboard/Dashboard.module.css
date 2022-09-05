@@ -17,6 +17,11 @@
   --c-text-tertiary: var(--c-gray-500);
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 .body {
   line-height: 1.5;
   min-height: 100vh;
@@ -28,22 +33,10 @@
   padding-bottom: 3vw;
   justify-content: center;
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 img {
   display: block;
   max-width: 100%;
-}
-
-button,
-select,
-input,
-textarea {
-  font: inherit;
 }
 
 .app {
@@ -60,7 +53,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 15%;
+  bottom: 0;
   right: 0;
   background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=990&q=80);
   background-size: cover;
@@ -70,7 +63,7 @@ textarea {
   opacity: 0.3;
 }
 
-.app-header {
+.app_header {
   display: flex;
   position: relative;
   grid-template-columns:
@@ -85,7 +78,7 @@ textarea {
   align-items: flex-end;
 }
 @media (max-width: 1200px) {
-  .app-header {
+  .app_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,17 +86,17 @@ textarea {
   }
 }
 
-.app-header-actions {
+.app_header_actions {
   display: flex;
   align-items: center;
 }
 @media (max-width: 1200px) {
-  .app-header-actions {
+  .app_header_actions {
     display: none;
   }
 }
 
-.app-body {
+.app_body {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -125,7 +118,7 @@ textarea {
   }
 }
 
-.logo-icon {
+.logo_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,21 +126,16 @@ textarea {
   height: 72px;
 }
 
-.logo-title {
+.logo_title {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
   margin-left: 0.75rem;
   font-size: 2.5rem;
-}
-.logo-title span:first-child {
   color: var(--c-text-primary);
 }
-.logo-title span:last-child {
-  color: var(--c-text-secondary);
-}
 
-.user-profile {
+.user_profile {
   display: flex;
   position: absolute;
   right: 20px;
@@ -158,15 +146,15 @@ textarea {
   color: var(--c-text-secondary);
   transition: 0.25s ease;
 }
-.user-profile:hover,
-.user-profile:focus {
+.user_profile:hover,
+.user_profile:focus {
   color: var(--c-text-primary);
 }
-.user-profile:hover span:last-child,
-.user-profile:focus span:last-child {
+.user_profile:hover span:last-child,
+.user_profile:focus span:last-child {
   box-shadow: 0 0 0 4px var(--c-gray-800), 0 0 0 5px var(--c-text-tertiary);
 }
-.user-profile span:first-child {
+.user_profile span:first-child {
   display: flex;
   font-size: 2.25rem;
   padding-top: 1rem;
@@ -174,7 +162,7 @@ textarea {
   border-bottom: 1px solid var(--c-gray-300);
   font-weight: 300;
 }
-.user-profile span:last-child {
+.user_profile span:last-child {
   transition: 0.25s ease;
   display: flex;
   justify-content: center;
@@ -240,7 +228,7 @@ textarea {
   box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
 }
 
-.tile-header {
+.tile_header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,15 +237,16 @@ textarea {
   font-size: large;
 }
 
-.transfer-section {
+.books {
   margin-top: 5.5rem;
+  position: relative;
 }
 @media (max-width: 700px) {
-  .transfer-section {
+  .books {
     margin-top: 2.5rem;
   }
 }
-.transfer-section-header {
+.books_header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,11 +254,11 @@ textarea {
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--c-gray-200);
 }
-.transfer-section-header h2 {
+.books_header h2 {
   font-size: 1.5rem;
 }
 
-.content-table {
+.content_table {
   border-collapse: collapse;
   margin: 25px auto;
   font-size: 1.2rem;
@@ -279,39 +268,37 @@ textarea {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
-  background-color: #AFB4FF;
+  background-color: #afb4ff;
 }
 
 @media (max-width: 700px) {
-  .content-table {
+  .content_table {
     font-size: 0.9rem;
   }
 }
 
-.content-table thead tr {
+.content_table thead tr {
   background-color: #a66cff;
   color: #ffffff;
   text-align: left;
   font-weight: bold;
 }
 
-.content-table th,
-.content-table td {
+.content_table th,
+.content_table td {
   padding: 12px 15px;
 }
 
-.content-body tr:hover {
+.content_body tr:hover {
   border-bottom: 1px solid #dddddd;
   cursor: pointer;
   background-color: #ffffff;
-  color: #AFB4FF;
+  color: #afb4ff;
 }
 
-
-.content-body tr:last-of-type {
-  border-bottom: 2px solid #9C9EFE;
+.content_body tr:last-of-type {
+  border-bottom: 2px solid #9c9efe;
 }
-
 
 .footer {
   display: grid;

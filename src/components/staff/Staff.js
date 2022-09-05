@@ -1,11 +1,11 @@
 import React from "react";
-import "./Staff.css";
+import "./Staff.module.css";
 import Navbar from "../navbar/Navbar";
 
 const Staff = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="Staff" />
       <div>Staff</div>;
     </div>
   );

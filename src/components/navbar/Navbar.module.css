@@ -2,25 +2,25 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 .Navbar {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #42855b;
+  position: relative;
 }
 
-.Navbar > .nav-logo {
+.Navbar > .nav_logo {
   font-weight: 700;
   font-size: 30px;
   margin: 15px;
   color: #ffffff;
 }
 
-.Navbar > .nav-items > a {
+.Navbar > .nav_items > .link {
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
@@ -29,11 +29,11 @@
   opacity: 0.9;
 }
 
-.Navbar > .nav-items > a:hover {
+.Navbar > .nav_items > .link:hover {
   opacity: 1;
 }
 
-/* .Navbar > .nav-items > a::before {
+.Navbar > .nav_items > .link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -42,18 +42,18 @@
   height: 2px;
   background: #ffffff;
   transition: all 0.45s;
-} */
+}
 
-.Navbar > .nav-items > a:hover::before {
+.Navbar > .nav_items > .link:hover::before {
   width: 100%;
 }
 
-.Navbar > .nav-toggle {
+.Navbar > .nav_toggle {
   display: none;
 }
 
 @media (max-width: 700px) {
-  .Navbar > .nav-items {
+  .Navbar > .nav_items {
     position: absolute;
     top: 60px;
     display: flex;
@@ -66,15 +66,15 @@
     transition: all 0.45s;
   }
 
-  .Navbar > .nav-items > a::before {
+  .Navbar > .nav_items > .link::before {
     background: transparent;
   }
 
-  .Navbar > .nav-items.open {
+  .Navbar > .nav_items.open {
     transform: translateX(0);
   }
 
-  .Navbar > .nav-toggle {
+  .Navbar > .nav_toggle {
     display: flex;
     width: 50px;
     height: 50px;
@@ -83,7 +83,7 @@
     cursor: pointer;
   }
 
-  .nav-toggle > .bar {
+  .nav_toggle > .bar {
     position: relative;
     width: 32px;
     height: 2px;
@@ -91,8 +91,8 @@
     transition: all 0.45s ease-in-out;
   }
 
-  .nav-toggle > .bar::before,
-  .nav-toggle > .bar::after {
+  .nav_toggle > .bar::before,
+  .nav_toggle > .bar::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -101,28 +101,28 @@
     transition: all 0.45s ease-in-out;
   }
 
-  .nav-toggle > .bar::before {
+  .nav_toggle > .bar::before {
     width: 25px;
     transform: translateY(-8px);
     right: 0;
   }
 
-  .nav-toggle > .bar::after {
+  .nav_toggle > .bar::after {
     width: 32px;
     transform: translateY(8px);
   }
 
-  .nav-toggle.open > .bar {
+  .nav_toggle.open > .bar {
     transform: translateX(-40px);
     background: scroll;
   }
 
-  .nav-toggle.open > .bar::before {
+  .nav_toggle.open > .bar::before {
     width: 32px;
     transform: rotate(45deg) translate(26px, -26px);
   }
 
-  .nav-toggle.open > .bar::after {
+  .nav_toggle.open > .bar::after {
     transform: rotate(-45deg) translate(26px, 26px);
   }
 }

@@ -5,7 +5,7 @@ import Form from "./Form";
 
 const AddBook = () => {
   return (
-    <div className="container">
+    <div className="book-container">
       <div className="screen">
         <div className="screen__content">
           <h1 className="heading">New Book Entry</h1>
