@@ -77,7 +77,7 @@ img {
   column-gap: 4rem;
   align-items: flex-end;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .app_header {
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ img {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .app_header_actions {
     display: none;
   }
@@ -112,7 +112,7 @@ img {
   padding-top: 1rem;
   border-bottom: 1px solid var(--c-gray-300);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .logo {
     border-bottom: 0;
   }

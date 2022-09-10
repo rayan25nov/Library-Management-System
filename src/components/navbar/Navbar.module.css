@@ -11,6 +11,7 @@
   align-items: center;
   background: #42855b;
   position: relative;
+  z-index: 1;
 }
 
 .Navbar > .nav_logo {

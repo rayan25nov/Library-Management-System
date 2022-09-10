@@ -1,5 +1,4 @@
 import React from "react";
-import DoubleArrowSharpIcon from "@mui/icons-material/DoubleArrowSharp";
 import styles from "./Dashboard.module.css";
 import Data from "../data/db.json";
 import { Link } from "react-router-dom";
@@ -16,7 +15,6 @@ const Dashboard = () => {
             <Link to="/adminlogin" className={styles.tile}>
               <div className={styles.tile_header}>
                 <h3>
-                  <DoubleArrowSharpIcon />
                   <span>Login As Admin</span>
                 </h3>
               </div>
@@ -24,7 +22,6 @@ const Dashboard = () => {
             <Link to="/userlogin" className={styles.tile}>
               <div className={styles.tile_header}>
                 <h3>
-                  <DoubleArrowSharpIcon />
                   <span>Login As Guest</span>
                 </h3>
               </div>
@@ -32,7 +29,6 @@ const Dashboard = () => {
             <Link to="/stafflogin" className={styles.tile}>
               <div className={styles.tile_header}>
                 <h3>
-                  <DoubleArrowSharpIcon />
                   <span>Login As Staff</span>
                 </h3>
               </div>

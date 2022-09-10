@@ -1,16 +1,11 @@
 import React from "react";
 import styles from "./Admin.module.css";
 import Navbar from "../navbar/Navbar";
-
 const Admin = () => {
   return (
     <div>
       <Navbar title="Admin" />
       <div className={styles.admin_body}>
-        {/* <div className={styles.admin_background}>
-        <div className={styles.shape}></div>
-        <div className={styles.shape}></div>
-      </div> */}
         <form className={styles.form}>
           <h3>Login Here</h3>
 

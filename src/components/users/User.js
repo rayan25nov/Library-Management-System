@@ -5,8 +5,9 @@ import Navbar from "../navbar/Navbar";
 
 const User = () => {
   const [loginOrRegister, setloginOrRegister] = useState("");
+  const [signUpInSmall, setSignUpInSmall] = useState("");
 
-  // Toggling between SignIn and SignUp
+  // Toggling between SignIn and SignUp in Full Screen
   const signUpHandler = () => {
     let classes = styles.right_panel_active;
     setloginOrRegister(classes);
@@ -14,13 +15,20 @@ const User = () => {
   const signInHandler = () => {
     setloginOrRegister("");
   };
+  // Toggling between SignIn and SignUp in Small Screen
+  const SignUpInSmallScreen = (e) => {
+    e.preventDefault();
+    let classes = styles.right_panel_active;
+    setSignUpInSmall(classes);
+  };
+
   return (
     <div>
       <Navbar title="User" />
       <div className={styles.user_background}>
         <div className={`${styles.container} ${loginOrRegister}`}>
           <div
-            className={`${styles.form_container} ${styles.sign_up_container}`}
+            className={`${styles.form_container} ${styles.sign_up_container} ${styles.toggle}`}
           >
             <form className={styles.form}>
               <h1 className={styles.heading}>Create Account</h1>
@@ -40,7 +48,7 @@ const User = () => {
                 type="password"
                 placeholder="Password"
               />
-              <button className={styles.input}>Sign Up</button>
+              <button className={styles.button}>Sign Up</button>
             </form>
           </div>
           <div
@@ -58,8 +66,16 @@ const User = () => {
                 type="password"
                 placeholder="Password"
               />
-              <Link className={styles.link} to={"/"}>Forgot your password?</Link>
+              <Link className={styles.link} to={"/"}>
+                Forgot your password?
+              </Link>
               <button className={styles.button}>Sign In</button>
+              <button
+                className={`${styles.button} ${styles.disappear} ${signUpInSmall}`}
+                onClick={SignUpInSmallScreen}
+              >
+                Sign Up
+              </button>
             </form>
           </div>
           <div className={styles.overlay_container}>
